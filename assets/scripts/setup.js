@@ -16,7 +16,7 @@ define([
     'backbone',
     'underscore',
     'jquery',
-    'routes',
+    'resources',
     'myModel',
     'myCollection',
     'myCollectionView'

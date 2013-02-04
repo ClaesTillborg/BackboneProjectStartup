@@ -1,7 +1,7 @@
 define(['backbone'], function(Backbone) {
 
     /**
-     * Model routes with including functions
+     * Model resources with including functions
      */
     App.Routes.Routes = Backbone.Router.extend({
         routes: {

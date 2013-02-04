@@ -13,6 +13,9 @@ define([ 'backbone', 'templateHelper' ], function( Backbone, Template) {
         events: {
             'click': 'clickEvent'
         },
+        initialize: function() {
+            this.model.on( 'destroy', this.remove, this );
+        },
 
         clickEvent: function() {
             alert('This is a click event!');

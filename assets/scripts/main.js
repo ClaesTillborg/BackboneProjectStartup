@@ -6,7 +6,7 @@ var HELPERSPATH = 'app/helpers/';
 var MODELSPATH = 'app/models/';
 var VIEWSPATH = 'app/views/';
 var TEMPLATESPATH = 'app/templates/';
-var ROUTESPATH = 'app/routes/';
+var RESOURCEPATH = 'app/resources/';
 var CONFIGPATH = 'config/';
 
 // Create paths for all the modules of tha application
@@ -19,7 +19,7 @@ require.config({
         'foundation': 'libs/foundation',
 
     // config
-        'routes': CONFIGPATH + 'routes',
+        'routes': CONFIGPATH + 'resources',
 
     // app
         // collections
@@ -27,6 +27,7 @@ require.config({
 
         // helpers
         'templateHelper': HELPERSPATH + 'template',
+        'eventHelper': HELPERSPATH + 'event',
 
         // models
         'myModel': MODELSPATH + 'myModel',
@@ -38,8 +39,8 @@ require.config({
         // templates
         'myTemplate': TEMPLATESPATH + 'myTemplate',
 
-        // routes
-        'myModelRoutes': ROUTESPATH + 'myModelRoutes'
+        // resources
+        'myModelRoutes': RESOURCEPATH + 'myModelRoutes'
     }
 });
 require(['setup']);
