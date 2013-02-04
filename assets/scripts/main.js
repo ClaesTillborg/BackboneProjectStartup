@@ -19,7 +19,7 @@ require.config({
         'foundation': 'libs/foundation',
 
     // config
-        'routes': CONFIGPATH + 'resources',
+        'routes': CONFIGPATH + 'routes',
 
     // app
         // collections
